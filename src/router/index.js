@@ -20,7 +20,14 @@ const routes = [
     component: function () {
       return import('../views/AboutView.vue')
     }
-  }
+  },
+  {
+    path: '/links',
+    name: 'links', 
+    component: function () {
+      return import('../views/LinksView.vue')
+    }
+  },
 ]
 
 const router = createRouter({

@@ -18,7 +18,7 @@
         const footer = document.querySelector('#footer')      
         const currentYear = new Date().getFullYear();
         if(footer) {
-          footer.innerHTML = `<span class="text-light"> &copy; ${currentYear} - MEA</span>`;
+          footer.innerHTML = `<span class="text-light"> &copy; ${currentYear} - Ilia Arquitetura</span>`;
         }       
       },
     },
