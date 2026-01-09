@@ -19,7 +19,7 @@
            </p>
         </div>
         
-        <img class="col-10 col-lg-4" :src="image" alt=""/>
+        <img class="col-10 col-lg-4" :src="image" alt="image"/>
         
     </section>
 </template>

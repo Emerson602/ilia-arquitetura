@@ -8,21 +8,21 @@
                 <div id="overlay" class="p-2 position-absolute d-flex flex-column justify-content-center align-items-center col-10 col-sm-7 col-md-5 col-lg-3">
                     <span class="text-white fs-5">Closet vista 1</span>
                 </div>
-                <img class="col-12" src="../assets/closet-image-1.webp">
+                <img class="col-12" src="../assets/closet-image-1.webp" alt="image">
             </div>
 
             <div id="container-overlay" class="position-relative col-10 col-sm-7 col-md-5 col-lg-3 m-4 d-flex justify-content-center align-items-center">
                 <div id="overlay" class="p-2 position-absolute d-flex flex-column justify-content-center align-items-center col-10 col-sm-7 col-md-5 col-lg-3">
                     <span class="text-white fs-5">Closet vista 2</span>
                 </div>
-                <img class="col-12" src="../assets/closet-image-2.webp">
+                <img class="col-12" src="../assets/closet-image-2.webp" alt="image">
             </div>
 
             <div id="container-overlay" class="position-relative col-10 col-sm-7 col-md-5 col-lg-3 m-4 d-flex justify-content-center align-items-center">
                 <div id="overlay" class="p-2 position-absolute d-flex flex-column justify-content-center align-items-center col-10 col-sm-7 col-md-5 col-lg-3">
                     <span class="text-white fs-5">Closet vista 3</span>
                 </div>
-                <img class="col-12" src="../assets/closet-image-3.webp"> 
+                <img class="col-12" src="../assets/closet-image-3.webp" alt="image"> 
             </div>  
            
         </div> 
