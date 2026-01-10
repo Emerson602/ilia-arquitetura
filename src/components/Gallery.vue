@@ -1,6 +1,9 @@
 <template>
+
   <section class="mt-5 col-12 pt-5 pb-5 d-flex flex-column justify-content-center align-items-center">  
+    
     <h2 class="fs-1">Projetos</h2>  
+
     <div id="gallery-container" class="d-flex flex-row justify-content-center align-items-center flex-wrap">       
       <div id="project" class="col-11 col-lg-5 mt-2 mt-lg-0 m-0 m-lg-3 d-flex flex-column justify-content-center align-items-center" v-for="(project, index) in visibleProjects" :key="index">
         <h3 class="mt-5 fs-2">{{ project.name }}</h3>
@@ -8,6 +11,7 @@
         <p class="mt-3 fs-5">{{ project.description }}</p>       
       </div>      
     </div>
+
     <button id="show-more" v-if="showMoreButtonVisibility" @click="showMoreProjects" class="rounded">
         <svg v-if="maxProjects <= totalProjects" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
@@ -134,14 +138,14 @@ export default {
 }
 
 button { 
-  background-color: var(--pearl-bush) !important;  
-  border: solid 2px var(--cocoa) !important;
+  background-color: var(--color-1) !important;  
+  border: solid 2px var(--color-3) !important;
   height: 40px;
   width: 200px; 
 }
 
 button:hover {
-  background-color: var(--cocoa) !important;
+  background-color: var(--color-3) !important;
   transition: 1s;      
 }
 

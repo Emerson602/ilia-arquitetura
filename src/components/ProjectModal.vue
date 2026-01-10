@@ -152,7 +152,7 @@ export default {
 <style scoped>
 
 #modal {
-  background-color: var(--pearl-bush);
+  background-color: var(--color-1);
   height: 100vh;  
   overflow-y: scroll;
 } 
@@ -163,15 +163,15 @@ export default {
 
 .btn-enabled {
   text-decoration: none;
-  background-color: var(--pearl-bush);
-  border: solid 2px var(--cocoa);
+  background-color: var(--color-1);
+  border: solid 2px var(--color-3);
   height: 40px;
   border-radius: 4px;
   margin: 10px;  
 }
 
 #btn-day, #btn-night, #btn-day svg, #btn-night svg {
-  background-color: var(--cocoa);   
+  background-color: var(--color-3);   
   fill: yellow;
 } 
 
@@ -188,7 +188,7 @@ export default {
 }
 
 .btn-enabled:hover {
-  background-color: var(--cocoa);
+  background-color: var(--color-3);
   transition: 1s;  
 }
 

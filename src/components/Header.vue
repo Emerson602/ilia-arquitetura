@@ -1,5 +1,4 @@
 <template>
-  <SocialMediaInHeader />
   <header id="header" class="d-flex justify-content-between align-items-center">         
      <router-link to="/"><img class="m-3 mt-0 mb-0 m-lg-5 mt-lg-0 mb-lg-0" src="../assets/logo.webp" alt="logo"></router-link>
       <svg @click="toggleMenu" id="close" v-if="showClose" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg d-lg-none m-3" viewBox="0 0 16 16">
@@ -18,13 +17,12 @@
 </template>
 
 <script>
-import SocialMediaInHeader from '@/components/SocialMediaInHeader.vue';
+  
 import Nav from '@/components/Nav.vue'; 
 
 export default {
   name: 'Header',     
   components: {
-    SocialMediaInHeader,
     Nav, 
   },
   data() {
@@ -76,7 +74,7 @@ export default {
    
   #header {
     width: 100%;
-    background-color: var(--pearl-bush);    
+    background-color: var(--color-1);    
   }
 
   #header img {

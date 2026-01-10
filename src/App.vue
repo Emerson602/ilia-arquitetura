@@ -77,22 +77,11 @@ export default {
  }
 
  :root {
-  --pearl-bush: #e2d5c4; 
-  --bison-hide: #C1B59F;
-  --stonewall: #908471;
-  --soya-bean: #5F5A4D;
-  --pale-oyster: #969286;
-  --armadillo: #4F493F;
-  --pale-brown: #908161;
-  --old-copper: #786037;
-  --organio: #646F40;
-  --butter: #CBB89D;
-  --coconut: #EDE1D2;
-  --natural: #806044;
-  --palm-oil: #502510;
-  --cocoa: #412F26;
-  --color-light-beige: #C5BBB1;
-  --color-medium-brown: #806044;
+  --color-1:#e2d5c4; 
+  --color-2:#e2d5c4; 
+  --color-3:#412F26; 
+  --color-4:#4F493F; 
+  --color-5:#EDE1D2; 
 }
 
 ::-webkit-scrollbar {
@@ -100,7 +89,7 @@ export default {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--pearl-bush);
+  background-color: var(--color-1);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -118,7 +107,7 @@ export default {
 }
 
 li:hover, a:hover, button:hover {
-  color: var(--color-medium-brown);
+  color: var(--color-);
   transition: 1s;  
   cursor: pointer !important;
 }
@@ -127,7 +116,7 @@ li:hover, a:hover, button:hover {
 
   #menu-mobile {    
       overflow-y: hidden;     
-      background-color: var(--cocoa);        
+      background-color: var(--color-3);        
       animation: nav-animation 0.5s ease-in; 
       animation-delay: 0s;          
       animation-fill-mode: forwards; 

@@ -70,7 +70,7 @@ export default {
 <style scoped>     
 
 #apresentation-container {
-    background-color: var(--color-medium-brown);  
+    background-color: var(--color-2);  
     background-image: url('@/assets/bg-mea.gif');   
     background-size: contain;
     background-repeat: no-repeat; 
@@ -85,7 +85,7 @@ export default {
     font-size: 2.5rem;
     font-family: 'alta', serif !important;
     font-weight: normal;     
-    color: var(--pearl-bush); 
+    color: var(--color-1); 
 }
 
 .letters-animation {

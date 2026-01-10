@@ -52,7 +52,7 @@ export default {
     
 <style scoped>     
     #most-recent {
-        background-color: var(--pearl-bush);
+        background-color: var(--color-1);
     }
 
     #overlay {     
@@ -60,7 +60,7 @@ export default {
         width: 100%;
         opacity: 0;
         transition: 1s ease-in;
-        background-color: var(--cocoa);
+        background-color: var(--color-3);
     }
 
     #container-overlay img {

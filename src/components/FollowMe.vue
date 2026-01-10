@@ -53,19 +53,19 @@ export default {
 <style scoped>
 
 #follow-me {
-    background-color: var(--pearl-bush);
+    background-color: var(--color-1);
 }
 
 #follow-me a {
     text-decoration: none;
-    background-color: var(--pearl-bush);
-    border: solid 2px var(--cocoa);
+    background-color: var(--color-1);
+    border: solid 2px var(--color-3);
     height: 40px;
     width: 200px;
 }
 
 #follow-me a:hover { 
-    background-color: var(--cocoa);
+    background-color: var(--color-3);
     transition: 1s;    
 }
 

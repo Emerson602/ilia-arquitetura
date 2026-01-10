@@ -38,7 +38,7 @@ export default defineComponent({
       position: fixed;
       top: 0;
       left: 0;
-      background-color: var(--pearl-bush);
+      background-color: var(--color-1);
       z-index: 99;
       display: flex;
       justify-content: center;
@@ -50,8 +50,8 @@ export default defineComponent({
       width: 50px;
       height: 50px;  
       border: solid 4px transparent;
-      border-top: solid 4px var(--armadillo);  
-      border-bottom: solid 4px var(--armadillo); 
+      border-top: solid 4px var(--color-4);  
+      border-bottom: solid 4px var(--color-4); 
       border-radius: 50%; 
       transform: rotate(0deg);
       animation: spin 2s linear infinite;
