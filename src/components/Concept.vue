@@ -4,18 +4,13 @@
         <div class="p-5 col-12 col-lg-5 text-start">
            <h3 class="fs-1 text-center text-lg-start">Conceito</h3>
            <p class="fs-5 mt-5">
-            O conceito de trabalho de Magda Nascimento valoriza a importância de utilizar materiais naturais
-            e trazer elementos da natureza para dentro dos ambientes, criando uma conexão profunda entre
-            o espaço e seus ocupantes. 
-            
-            A escolha de materiais como madeira, pedra e fibras naturais não apenas acrescenta beleza e
-            autenticidade ao design, mas também promove um ambiente mais saudável e sustentável.
+              O Estúdio Ilia Arquitetura nasce com o propósito de criar espaços funcionais, acolhedores e atemporais, desenvolvidos a partir de um olhar sensível e técnico sobre cada projeto.
 
-            Integrar a natureza nos espaços interiores fortalece essa relação, proporcionando conforto,
-            bem-estar e equilíbrio. 
-            
-            Para Magda, essa abordagem é essencial para criar projetos que dialoguem com o meio ambiente
-            e ao mesmo tempo melhorem a qualidade de vida das pessoas.
+              Com atuação em Maceió – AL e atendimento para todo o Brasil, o estúdio oferece soluções personalizadas em projetos de arquitetura e interiores, tanto de forma presencial quanto remota, sempre mantendo proximidade, cuidado e atenção aos detalhes.
+
+              Cada projeto é pensado de maneira única, considerando as necessidades, o orçamento e o uso real do espaço, buscando equilíbrio entre estética, funcionalidade e identidade.
+
+              No Estúdio Ilia Arquitetura, acreditamos que bons projetos unem beleza, conforto e praticidade, resultando em ambientes que fazem sentido hoje e permanecem relevantes ao longo do tempo.
            </p>
         </div>
         
@@ -44,5 +39,6 @@ export default {
 
   #concept p {
     text-wrap: balance;
+    text-indent: 30px;
   }
 </style>

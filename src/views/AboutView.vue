@@ -10,9 +10,11 @@
       
       <div class="col-12 col-md-6 mt-5 m-md-0 d-flex justify-content-center align-items-center">
         <p class="col-10 fs-5">
-          Magda Nascimento - Arquiteta e Urbanista
-          Formada pela Universidade Federal de Alagoas, Magda Nascimento é uma arquiteta e urbanista apaixonada por criar espaços que equilibrem funcionalidade, estética e sustentabilidade. Com uma visão inovadora, seu trabalho valoriza o uso de materiais naturais, como madeira e pedra, integrando-os de maneira harmoniosa ao design de interiores. Magda busca sempre soluções que respeitem o meio ambiente, criando ambientes acolhedores e únicos.
-        </p>
+          Sou Arquiteta e Urbanista formada pela Universidade Federal de Alagoas (UFAL) e atuo no desenvolvimento de projetos que unem estética, funcionalidade e sensibilidade às necessidades de cada cliente.
+
+          Acredito que a arquitetura tem o poder de transformar rotinas e experiências, indo além da forma e da técnica. Meu processo criativo é baseado na escuta atenta, no cuidado com os detalhes e na busca por soluções que respeitem o contexto, o estilo de vida e a identidade de quem irá ocupar o espaço.
+
+          À frente do Estúdio Ilia Arquitetura, conduzo cada projeto de forma próxima e personalizada, garantindo coerência entre conceito, funcionalidade e execução.        </p>
       </div>
 
     </div> 
@@ -35,4 +37,11 @@
     },
   }
 </script>
+
+<style>
+  p {
+    text-indent: 30px;
+    text-wrap: balance;
+  }
+</style>
 
