@@ -77,7 +77,7 @@ export default {
  }
 
  :root {
-  --pearl-bush: #E3DED1; 
+  --pearl-bush: #e2d5c4; 
   --bison-hide: #C1B59F;
   --stonewall: #908471;
   --soya-bean: #5F5A4D;
