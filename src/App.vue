@@ -92,7 +92,7 @@ export default {
   --palm-oil: #502510;
   --cocoa: #412F26;
   --color-light-beige: #C5BBB1;
-  --color-medium-brown: #997E67;
+  --color-medium-brown: #806044;
 }
 
 ::-webkit-scrollbar {

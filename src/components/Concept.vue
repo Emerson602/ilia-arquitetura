@@ -38,7 +38,8 @@ export default {
   } 
 
   #concept p {
-    text-wrap: balance;
-    text-indent: 30px;
+    text-align: justify;
+    hyphens: auto;
+    text-indent: 10px;
   }
 </style>
