@@ -123,7 +123,7 @@ onBeforeUnmount(() => {
 
   width: 320px;
   height: 320px;
-  background-color: #5a3a1a;
+  background-color: var(--color-3);
   display: flex;
   align-items: center;
   justify-content: center;

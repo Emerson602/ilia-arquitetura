@@ -79,9 +79,10 @@ export default {
  :root {
   --color-1:#e2d5c4; 
   --color-2:#e2d5c4; 
-  --color-3:#412F26; 
+  --color-3:#5a3a1a; 
   --color-4:#4F493F; 
   --color-5:#EDE1D2; 
+  --color-6: #B0C39D;
 }
 
 ::-webkit-scrollbar {
@@ -93,12 +94,12 @@ export default {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--bison-hide);
+  background-color: var(--color-5);
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--natural);
+  background-color: var(--color-6);
 }
 
 #nav ul, #nav a {
@@ -107,7 +108,7 @@ export default {
 }
 
 li:hover, a:hover, button:hover {
-  color: var(--color-);
+  color: var(--color-6);
   transition: 1s;  
   cursor: pointer !important;
 }

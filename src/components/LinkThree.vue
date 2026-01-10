@@ -1,8 +1,8 @@
 <template>
 
     <div>
-        <a href="http://localhost:8080/" target="_blank"><button>Site</button></a>
-        <a href="https://api.whatsapp.com/send?phone=5582993975054" target="_blank"><button class="my-3">Quero um projeto</button></a>
+        <a href="https://www.iliaarquitetura.com.br/" target="_blank"><button>Site</button></a>
+        <a href="https://api.whatsapp.com/send?phone=5582988777687" target="_blank"><button class="my-3">Quero um projeto</button></a>
         <a href="https://www.instagram.com/magdaemiliaarquitetura/" target="_blank"><button>Instagram</button></a>
     </div> 
 
@@ -35,7 +35,7 @@ div {
 }  
 
 button {
-  background-color: #B0C39D;
+  background-color: var(--color-6);
   border: 0;
   padding: 30px 30px;  
   border-radius: 43px;
