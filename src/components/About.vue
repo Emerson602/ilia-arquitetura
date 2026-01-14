@@ -53,7 +53,6 @@
   p {
     text-align: justify;
     hyphens: auto;
-    text-indent: 10px;
   }
 
   #cicle {

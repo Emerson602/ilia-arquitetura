@@ -52,7 +52,7 @@ export default {
     
 <style scoped>     
     #most-recent {
-        background-color: var(--color-1);
+        background-color: var(--color-7);
     }
 
     #overlay {     
