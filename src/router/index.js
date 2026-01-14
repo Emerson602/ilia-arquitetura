@@ -15,13 +15,6 @@ const routes = [
     }
   },
   {
-    path: '/about',
-    name: 'about', 
-    component: function () {
-      return import('../views/AboutView.vue')
-    }
-  },
-  {
     path: '/links',
     name: 'links', 
     component: function () {

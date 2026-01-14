@@ -74,7 +74,12 @@ export default {
    
   #header {
     width: 100%;
-    background-color: var(--color-1);    
+    background-color: var(--color-1);  
+    opacity: 0.95;  
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 99;
   }
 
   #header img {
