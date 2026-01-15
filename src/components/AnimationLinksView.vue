@@ -117,6 +117,7 @@ onBeforeUnmount(() => {
   background-image: url('../assets/concept-image.webp');
   background-repeat: no-repeat;
   background-size: cover;  
+  z-index: 100;
 }
 
 .polygon {
