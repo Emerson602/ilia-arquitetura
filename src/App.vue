@@ -91,16 +91,16 @@ export default {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--color-1);
+  background-color: var(--color-7);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-5);
+  background-color: var(--color-6);
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-6);
+  background-color: var(--color-1);
 }
 
 #nav ul, #nav a {

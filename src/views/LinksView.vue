@@ -28,8 +28,8 @@ export default {
 <style scoped>
 
 #links {
-  background-color: #fff;
-  width: 100vw;
+  background-color: var(--color-7);
+  width: 100%;
   height: auto;
   position: absolute;
   top: 0;

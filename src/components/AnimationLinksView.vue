@@ -1,7 +1,7 @@
 <template> 
     <div id="content"> 
       <div ref="polygonEl" class="polygon">
-        <span>ILIA</span>  
+        <img src="../assets/logo.webp">  
       </div>      
     </div>
 </template> 
@@ -123,7 +123,7 @@ onBeforeUnmount(() => {
 
   width: 320px;
   height: 320px;
-  background-color: var(--color-3);
+  background-color: var(--color-1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,10 +144,9 @@ onBeforeUnmount(() => {
   }
 }
 
-.polygon span {
-  color: #FAF3E0;
-  font-size: 64px;
-  letter-spacing: 6px;
+.polygon img {
+  width: 150px;
+  height: auto;
 }
 
 

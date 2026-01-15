@@ -31,11 +31,12 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0 100px 0;
+  padding: 100px 0 100px 0;  
 }  
 
 button {
-  background-color: var(--color-6);
+  background-color: var(--color-1);
+  color: var(--color-7);
   border: 0;
   padding: 30px 30px;  
   border-radius: 43px;

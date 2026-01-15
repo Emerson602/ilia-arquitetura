@@ -31,7 +31,7 @@
 <style scoped>
 
   #footer {
-    background-color: var(--color-2);        
+    background-color: var(--color-1);        
     border-top: solid 2px var(--color-5);    
     text-transform: uppercase;
     font-size: 0.8rem;
