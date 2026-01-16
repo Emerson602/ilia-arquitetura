@@ -1,7 +1,7 @@
 <template> 
     <div id="content"> 
       <div ref="polygonEl" class="polygon">
-        <img src="../assets/logo.webp">  
+        <img src="../assets/logo.webp" alt="image-logo">  
       </div>      
     </div>
 </template> 
@@ -17,7 +17,7 @@ let rafId = null
 
 const MIN = -1.5
 const MAX = 1.5
-const SPEED = 0.018
+const SPEED = 0.028
 
 let points = [
   { x: 0, y: 0 },

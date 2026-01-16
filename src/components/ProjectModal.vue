@@ -155,6 +155,7 @@ export default {
   background-color: var(--color-1);
   height: 100vh;  
   overflow-y: scroll;
+  z-index: 100;
 } 
 
 #close-modal {
