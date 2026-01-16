@@ -16,8 +16,8 @@
 
     div {
         position: fixed;
-        bottom: 1vh;
-        right: 1vw;
+        bottom: 2vh;
+        right: 3vw;
         z-index: 200;
         background-color: var(--color-1);
         padding: 5px;
