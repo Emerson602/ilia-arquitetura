@@ -4,6 +4,7 @@
     <About />
     <Services />
     <MostRecent />
+   <!-- <Form /> -->
     <FollowMe />    
     <Footer />
   </div>
@@ -19,6 +20,7 @@ import FollowMe from '@/components/FollowMe.vue';
 import About from '@/components/About.vue';
 import Services from '@/components/Services.vue';
 import Footer from '@/components/Footer.vue';
+//import Form from '@/components/Form.vue';
 
 
 
@@ -31,6 +33,7 @@ import Footer from '@/components/Footer.vue';
       MostRecent,      
       FollowMe,
       Footer, 
+      //Form,
 
     }
   }
