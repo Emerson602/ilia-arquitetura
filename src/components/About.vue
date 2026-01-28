@@ -6,18 +6,21 @@
     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 mb-5">   
       
       <div class="col-12 col-md-6 mt-5 m-md-0">
-       <div class="d-flex justify-content-center align-items-center flex-column"> 
-        <div class="col-10 d-flex justify-content-center align-items-center align-items-md-start flex-column">
-           <img class="col-6 col-md-4" :src="logo_2" alt="image logo">
-        </div>       
-        <p class="col-10 fs-5 mt-3">
-          Sou Arquiteta e Urbanista formada pela Universidade Federal de Alagoas (UFAL) e atuo no desenvolvimento de projetos que unem estética, funcionalidade e sensibilidade às necessidades de cada cliente. 
-          <br><br>
-          Acredito que a arquitetura tem o poder de transformar rotinas e experiências, indo além da forma e da técnica. Meu processo criativo é baseado na escuta atenta, no cuidado com os detalhes e na busca por soluções que respeitem o contexto, o estilo de vida e a identidade de quem irá ocupar o espaço. 
-          <br><br>
-          À frente do Estúdio Ilia Arquitetura, conduzo cada projeto de forma próxima e personalizada, garantindo coerência entre conceito, funcionalidade e execução.        
-        </p>
-        </div> 
+        <div class="d-flex justify-content-center align-items-center align-items-md-end flex-column"> 
+
+            <div class="col-10 d-flex justify-content-center align-items-center align-items-md-center flex-column">
+              <img class="col-6 col-md-4" :src="logo_2" alt="image logo">
+            </div>       
+
+            <p class="col-10 fs-5 mt-3">
+              Sou Arquiteta e Urbanista formada pela Universidade Federal de Alagoas (UFAL) e atuo no desenvolvimento de projetos que unem estética, funcionalidade e sensibilidade às necessidades de cada cliente. 
+              <br><br>
+              Acredito que a arquitetura tem o poder de transformar rotinas e experiências, indo além da forma e da técnica. Meu processo criativo é baseado na escuta atenta, no cuidado com os detalhes e na busca por soluções que respeitem o contexto, o estilo de vida e a identidade de quem irá ocupar o espaço. 
+              <br><br>
+              À frente do Estúdio Ilia Arquitetura, conduzo cada projeto de forma próxima e personalizada, garantindo coerência entre conceito, funcionalidade e execução.        
+            </p>
+
+          </div> 
       </div>
 
       <div class="col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-center align-items-center">
