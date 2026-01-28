@@ -50,8 +50,8 @@ export default defineComponent({
       width: 50px;
       height: 50px;  
       border: solid 4px transparent;
-      border-top: solid 4px var(--color-4);  
-      border-bottom: solid 4px var(--color-4); 
+      border-top: solid 4px var(--color-7);  
+      border-bottom: solid 4px var(--color-7); 
       border-radius: 50%; 
       transform: rotate(0deg);
       animation: spin 2s linear infinite;

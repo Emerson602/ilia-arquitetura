@@ -60,7 +60,7 @@ export default {
         width: 100%;
         opacity: 0;
         transition: 1s ease-in;
-        background-color: var(--color-3);
+        background-color: var(--color-1);
     }
 
     #container-overlay img {
