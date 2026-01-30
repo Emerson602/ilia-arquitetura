@@ -5,7 +5,7 @@
     <Services />
     <MostRecent />
    <!-- <Form /> -->
-    <FollowMe />    
+    <Contacts />    
     <Footer />
   </div>
 </template> 
@@ -16,7 +16,7 @@
  
 import ImageTransitionContainer from '@/components/ImageTransitionContainer.vue'; 
 import MostRecent from '@/components/MostRecent.vue'; 
-import FollowMe from '@/components/FollowMe.vue';
+import Contacts from '@/components/Contacts.vue';
 import About from '@/components/About.vue';
 import Services from '@/components/Services.vue';
 import Footer from '@/components/Footer.vue';
@@ -31,7 +31,7 @@ import Footer from '@/components/Footer.vue';
       About,
       Services,
       MostRecent,      
-      FollowMe,
+      Contacts,
       Footer, 
       //Form,
 
