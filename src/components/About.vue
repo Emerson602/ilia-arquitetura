@@ -25,7 +25,6 @@
 
       <div class="col-12 col-md-6 mt-3 mt-md-5 d-flex justify-content-center align-items-center">
         <img :src="imgProfile" alt="Profile Image" class="col-10 col-md-8 rounded-circle">
-        <div id="cicle" class="col-10 col-md-8 rounded-circle"></div>
       </div>
 
     </div> 
@@ -57,13 +56,5 @@
     text-align: justify;
     hyphens: auto;
   }
-
-  #cicle {
-    background-color: red;
-    position: absolute;
-  }
-
-
-
 
 </style>

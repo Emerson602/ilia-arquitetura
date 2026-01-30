@@ -2,7 +2,7 @@
 
   <section class="mt-5 col-12 pt-5 pb-5 d-flex flex-column justify-content-center align-items-center">  
     
-    <h2 class="fs-1">Projetos</h2>  
+    <h2 class="fs-1 mt-5 pt-5">Projetos</h2>  
 
     <div id="gallery-container" class="d-flex flex-row justify-content-center align-items-center flex-wrap">       
       <div id="project" class="col-11 col-lg-5 mt-2 mt-lg-0 m-0 m-lg-3 d-flex flex-column justify-content-center align-items-center" v-for="(project, index) in visibleProjects" :key="index">

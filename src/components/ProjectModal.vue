@@ -1,5 +1,6 @@
 <template>
   <div v-if="isVisible" class="col-12 h-100 position-absolute top-0 left-0 d-flex justify-content-center align-items-center" @click.self="closeModal"> 
+
     <div id="modal" class="col-12 d-flex flex-column justify-content-start align-items-center position-fixed top-0 left-0 pt-5 pb-5 text-center">
 
     <div class="col-12 d-flex justify-content-end align-items-center position-absolute top-0">
@@ -38,18 +39,18 @@
 
       <div class="col-10 mt-3 d-flex flex-column justify-content-center align-items-center">
 
-        <img v-if="isDay" class="col-12" :src="project.imagesDay[currentImageIndex]" alt="Project Image">
-        <img v-if="isNight" class="col-12" :src="project.imagesNight[currentImageIndex]" alt="Project Image"> 
+        <img v-if="isDay" class="col-12 col-md-6" :src="project.imagesDay[currentImageIndex]" alt="Project Image">
+        <img v-if="isNight" class="col-12 col-md-6" :src="project.imagesNight[currentImageIndex]" alt="Project Image"> 
 
-        <div class="position-absolute col-10 d-flex justify-content-between align-items-center">
+        <div class="position-absolute col-10 col-md-5 d-flex justify-content-between align-items-center">
           <button @click="backImage" id="btn-back" ref="btnBack" class="btn-disabled">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-chevron-left" viewBox="0 0 16 16">
              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
             </svg>
           </button>
 
           <button @click="nextImage" id="btn-next" ref="btnNext" class="btn-enabled">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-chevron-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
             </svg>
           </button>
@@ -152,7 +153,7 @@ export default {
 <style scoped>
 
 #modal {
-  background-color: var(--color-1);
+  background-color: var(--color-7);
   height: 100vh;  
   overflow-y: scroll;
   z-index: 100;
@@ -165,15 +166,15 @@ export default {
 .btn-enabled {
   text-decoration: none;
   background-color: var(--color-1);
-  border: solid 2px var(--color-3);
+  border: solid 2px var(--color-1);
   height: 40px;
   border-radius: 4px;
   margin: 10px;  
 }
 
 #btn-day, #btn-night, #btn-day svg, #btn-night svg {
-  background-color: var(--color-3);   
-  fill: yellow;
+  background-color: var(--color-1);   
+  fill: var(--color-7);
 } 
 
 .btn-disabled {
@@ -194,7 +195,7 @@ export default {
 }
 
 .btn-enabled svg:hover {
-    fill: #fff !important;    
+    fill: var(--color-7) !important;    
 }
 
 #tumbnails img:hover {
