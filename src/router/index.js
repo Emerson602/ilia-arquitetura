@@ -14,6 +14,13 @@ const routes = [
       return import('../views/ProjectsView.vue')
     }
   },
+    {
+    path: '/form',
+    name: 'form', 
+    component: function () {
+      return import('../views/FormView.vue')
+    }
+  },
   {
     path: '/links',
     name: 'links', 
