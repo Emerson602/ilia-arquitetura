@@ -1,6 +1,6 @@
 <template>
 
- <div class="about d-flex flex-column justify-content-center align-items-center mt-0 mt-md-5 mb-5 h-auto">
+ <div id="about" class="about d-flex flex-column justify-content-center align-items-center mt-0 mt-md-5 mb-5 h-auto">
 
     
     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 mb-5">   

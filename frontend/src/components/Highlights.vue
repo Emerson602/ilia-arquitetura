@@ -35,7 +35,7 @@
         </div> 
 
         <div class="col-12 mt-5 d-flex justify-content-center align-itens-center text-decoration-none">            
-            <router-link id="see-all-projects" to="/projects" class="col-9 text-center text-md-end">      
+            <router-link @click="scrollToTop" id="see-all-projects" to="/projects" class="col-9 text-center text-md-end">      
                 Veja todos os nossos projetos <br>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#141414" class="bi bi-arrow-right" viewBox="0 0 16 16">
                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
@@ -59,7 +59,10 @@ export default {
       }   
     },
     methods: {
-      
+        scrollToTop() {
+            const top = document.querySelector('#nav')
+            top.scrollIntoView({ behavior: 'smooth' });   
+        },
     },
     mounted() {
       
