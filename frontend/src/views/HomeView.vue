@@ -3,7 +3,7 @@
     <ImageTransitionContainer />
     <About />
     <Services />
-    <MostRecent />
+    <Highlights />
    <!-- <Form /> -->
     <Contacts />    
     <Footer />
@@ -15,7 +15,7 @@
 
  
 import ImageTransitionContainer from '@/components/ImageTransitionContainer.vue'; 
-import MostRecent from '@/components/MostRecent.vue'; 
+import Highlights from '@/components/Highlights.vue'; 
 import Contacts from '@/components/Contacts.vue';
 import About from '@/components/About.vue';
 import Services from '@/components/Services.vue';
@@ -30,7 +30,7 @@ import Footer from '@/components/Footer.vue';
       ImageTransitionContainer, 
       About,
       Services,
-      MostRecent,      
+      Highlights,      
       Contacts,
       Footer, 
       //Form,
