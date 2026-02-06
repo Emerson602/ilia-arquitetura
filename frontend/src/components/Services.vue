@@ -78,7 +78,7 @@ methods: {
   setModalContent(type) {
     const contentMap = {
       arquitetonico: {
-        title: 'PROJETO DE ARQUITETÔNICO',
+        title: 'PROJETO ARQUITETÔNICO',
         description: 'Projeto de arquitetura detalhado para construção ou reforma de espaços.'
       },
       interiores: {
