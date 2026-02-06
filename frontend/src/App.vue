@@ -77,7 +77,7 @@ export default {
  :root {
   --color-1:#71744a; 
   --color-2:#e2d5c4; 
-  --color-3:#5a3a1a; 
+  --color-3:#965b3e; 
   --color-4:#4F493F; 
   --color-5:#EDE1D2; 
   --color-6: #B0C39D;

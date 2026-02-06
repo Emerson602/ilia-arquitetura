@@ -36,7 +36,7 @@
 
             <div class="modal-content">
 
-            <div class="modal-header">
+            <div class="modal-header border-0">
                 <h5 class="modal-title">{{ type }}</h5>
 
                 <button @click="closeModal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -115,8 +115,10 @@ h3, span {
 }
 
 .modal-content {
-    background-color: var(--color-2);
+    background-color: var(--color-3);
 }
+
+
 
 #type-project, span:hover {
     cursor: pointer;
