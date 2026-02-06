@@ -2,7 +2,7 @@
   <nav id="nav">
     <ul class="d-flex flex-column flex-lg-row justify-content-lg-center align-items-lg-center m-0 p-0 text-uppercase">
       <router-link to="/" @click="closeMenu"><li class="m-2 m-md-0">Inicio</li></router-link> 
-      <router-link to="/projects" @click="closeMenu"><li class="m-2 m-md-0 mx-lg-4">Projetos</li></router-link> 
+      <router-link to="/projetos" @click="closeMenu"><li class="m-2 m-md-0 mx-lg-4">Projetos</li></router-link> 
       <li @click="scrollToAbout">Sobre</li>   
       <a class="m-2 m-md-0 mx-lg-4" @click="closeMenu" href="https://api.whatsapp.com/send?phone=5582988777687" target="_blank"><li>Quero um projeto</li></a>
     </ul>            

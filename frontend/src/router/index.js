@@ -4,19 +4,19 @@ import HomeView from '../views/HomeView.vue'
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'inicio',
     component: HomeView
   },
   {
-    path: '/projects',
-    name: 'projects', 
+    path: '/projetos',
+    name: 'projetos', 
     component: function () {
       return import('../views/ProjectsView.vue')
     }
   },
     {
-    path: '/form',
-    name: 'form', 
+    path: '/formulario',
+    name: 'formulario', 
     component: function () {
       return import('../views/FormView.vue')
     }
