@@ -262,7 +262,7 @@
             this.changeTextModal('Enviando...', '');
 
             try {
-                await axios.post('https://formiliaarquitetura.vercel.app/form', this.form);                                  
+                await axios.post('https://ilia-form.vercel.app/form', this.form);                                  
                 this.changeTextModal('Enviado com sucesso!', 'Entraremos entraremos em contato'); 
                 this.showBtnClose(true);            
             } catch (error) {
