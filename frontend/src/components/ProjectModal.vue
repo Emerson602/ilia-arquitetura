@@ -57,7 +57,7 @@
         </div>  
       </div>   
 
-      <div id="tumbnails" class="mt-3 p-0 col-10 d-flex flex-row justify-content-center align-items-center">
+      <div id="thumbnails" class="mt-3 p-0 col-10 d-flex flex-row justify-content-center align-items-center">
         <img v-if="isDay" v-for="(image, index) in project.imagesDay" :key="index" :src="image" @click="changeImage(index)" class="m-2" alt="Thumbnail Image">
         <img v-if="isNight" v-for="(image, index) in project.imagesNight" :key="index" :src="image" @click="changeImage(index)" class="m-2" alt="Thumbnail Image">
       </div>
@@ -217,12 +217,20 @@ export default {
     fill: var(--color-7) !important;    
 }
 
-#tumbnails img {
+#thumbnails {
+  overflow-x: auto; 
+}
+
+#thumbnails::-webkit-scrollbar {
+  width: 0px;
+}
+
+#thumbnails img {
   width: 50px;
   height: auto;
 }
 
-#tumbnails img:hover {
+#thumbnails img:hover {
   cursor: pointer;  
 }
 

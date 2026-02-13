@@ -1,14 +1,14 @@
 <template>
 
- <div id="about" class="about d-flex flex-column justify-content-center align-items-center mt-0 mt-md-5 mb-5 h-auto">
+ <div id="about" class="about d-flex flex-column justify-content-center align-items-center mt-0 mt-lg-5 mb-5 h-auto">
 
     
-    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 mb-5">   
+    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center mt-5 mb-5">   
       
-      <div class="col-12 col-md-6 mt-5 m-md-0">
-        <div class="d-flex justify-content-center align-items-center align-items-md-end flex-column"> 
+      <div class="col-12 col-lg-6 mt-5 m-lg-0">
+        <div class="d-flex justify-content-center align-items-center align-items-lg-end flex-column"> 
 
-            <div class="col-10 d-flex justify-content-center align-items-center align-items-md-center flex-column">
+            <div class="col-10 d-flex justify-content-center align-items-center align-items-lg-center flex-column">
               <img class="col-6 col-md-4" :src="logo_2" alt="image logo">
             </div>       
 

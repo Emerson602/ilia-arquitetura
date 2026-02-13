@@ -205,7 +205,7 @@
 
         <div v-if="visibleModal" id="modal" class="d-flex flex-column justify-content-center align-items-center rounded">
         
-            <svg id="close" v-if="showX" @click="closeModal" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x m-3 position-absolute top-0 end-0" viewBox="0 0 16 16">
+            <svg id="close" v-if="showX" @click="closeModal" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-x m-3 position-absolute top-0 end-0" viewBox="0 0 16 16">
                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
             </svg>
 
@@ -306,10 +306,18 @@ methods: {
         this.form.name = ''; 
         this.form.phone = '';
         this.form.message = '';
-    }     
-},
-mounted() {        
+    },     
+    scroll() {
 
+    const container = document.querySelector("#contacts-container");
+
+      if (container) {
+        container.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+},
+mounted() {   
+   this.scroll();
 },  
 }
 </script>
@@ -340,6 +348,34 @@ button:hover {
   transition: 1.5;
   cursor: pointer; 
 }
+
+#modal {
+    width: 400px;
+    height: 150px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-1);
+    border: solid 2px var(--color-7); 
+}
+
+#modal span {
+    color: var(--color-7);
+}
+
+#modal svg:hover {
+    cursor: pointer;
+    transition: 1.5s;
+    color: var(--color-3);
+}
+
+@media(max-width: 768px) { 
+
+    #modal {
+        width: 90%;
+    }
+} 
 
 
     
