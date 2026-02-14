@@ -21,33 +21,33 @@ export default {
                     'transition/desktop-2.webp',
                     'transition/desktop-3.webp',
                     'transition/desktop-4.webp',  
-                    'transition/desktop-5.webp', 
+                    'transition/desktop-5.webp',
                     'transition/desktop-1.webp',
                     'transition/desktop-2.webp',
                     'transition/desktop-3.webp',
                     'transition/desktop-4.webp',  
-                    'transition/desktop-5.webp',
+                    'transition/desktop-5.webp', 
                 ],
                 mobileImages: [
                     'transition/mobile-1.webp',
                     'transition/mobile-2.webp',
                     'transition/mobile-3.webp',
                     'transition/mobile-4.webp', 
-                    'transition/mobile-5.webp',   
+                    'transition/mobile-5.webp',  
                     'transition/mobile-1.webp',
                     'transition/mobile-2.webp',
                     'transition/mobile-3.webp',
                     'transition/mobile-4.webp', 
-                    'transition/mobile-5.webp',    
+                    'transition/mobile-5.webp',     
                 ],
             }   
         },
     methods: {
         imageTransition() {
-
+            
             this.currentImage++                   
-
-            if(this.currentImage > 2) {
+            
+            if(this.currentImage > this.desktopImages.length - 1) {
                 this.currentImage = 0
             }            
         }
