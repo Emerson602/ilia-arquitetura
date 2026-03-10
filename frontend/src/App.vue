@@ -18,8 +18,8 @@ export default {
     WhatsappButton
   },
   data() {
-    return {
-      whatsapp: 'https://api.whatsapp.com/send?phone=5582988777687',
+    return {    
+      whatsapp: 'https://api.whatsapp.com/send?phone=5582988777687', 
       instagram: 'https://www.instagram.com/studioilia.arq/',
       tiktok: 'https://www.tiktok.com/@studioiliaarq',     
       site: 'https://www.iliaarquitetura.com.br/', 
@@ -49,7 +49,7 @@ export default {
       const isMobile = window.innerWidth <= 768;
 
       if (isMobile) {
-        this.whatsapp = 'https://wa.me/qr/NJTH46CBHBJFN1';
+        this.whatsapp = 'https://api.whatsapp.com/send?phone=5582988777687';
       }
     }
   },
