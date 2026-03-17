@@ -5,6 +5,7 @@
         <a :href="whatsappLink()" target="_blank"><button class="my-3">Quero um projeto</button></a>
         <a :href="instagramLink()" target="_blank"><button>Instagram</button></a>
         <a :href="tiktokLink()" target="_blank"><button class="mt-3">Tik Tok</button></a>
+        <router-link to="/projetos"><button class="mt-3">Portfolio</button></router-link>
     </div> 
 
 </template> 

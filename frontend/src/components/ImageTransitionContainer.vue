@@ -45,9 +45,13 @@ export default {
         }
     },
     mounted() {
+        
         const transitionInterval = setInterval(() => {
             this.imageTransition();
         }, 15000)
+
+        this.mobileImages = this.mobileImages.reverse();
+        this.desktopImages = this.desktopImages.reverse();
     }
 }
 
