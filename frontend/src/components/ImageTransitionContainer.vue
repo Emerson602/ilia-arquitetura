@@ -23,6 +23,8 @@ export default {
                     'transition/desktop-4.webp',  
                     'transition/desktop-5.webp',
                     'transition/desktop-6.webp',
+                    'transition/desktop-7.webp',
+                    'transition/desktop-8.webp',
                 ],
                 mobileImages: [
                     'transition/mobile-1.webp',
@@ -31,6 +33,8 @@ export default {
                     'transition/mobile-4.webp', 
                     'transition/mobile-5.webp', 
                     'transition/mobile-6.webp',   
+                    'transition/mobile-7.webp',   
+                    'transition/mobile-8.webp',   
                 ],
             }   
         },
