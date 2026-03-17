@@ -15,21 +15,21 @@
                 <div id="overlay" class="p-2 position-absolute d-flex flex-column justify-content-center align-items-center col-10 col-sm-7 col-md-5 col-lg-3">
                     <span class="text-white fs-5">Varanda gourmet</span>
                 </div>
-                <img class="col-12" src="../assets/projetos-destaques/destaque-1.webp" alt="image">
+                <img class="col-12" src="../assets/apartamento-terra/cozinha/capa.webp" alt="image">
             </div>
 
             <div id="container-overlay" class="position-relative col-10 col-sm-7 col-md-5 col-lg-3 m-4 d-flex justify-content-center align-items-center">
                 <div id="overlay" class="p-2 position-absolute d-flex flex-column justify-content-center align-items-center col-10 col-sm-7 col-md-5 col-lg-3">
                     <span class="text-white fs-5">Quarto</span>
                 </div>
-                <img class="col-12" src="../assets/projetos-destaques/destaque-2.webp" alt="image">
+                <img class="col-12" src="../assets/apartamento-terra/sala/capa.webp" alt="image">
             </div>
 
             <div id="container-overlay" class="position-relative col-10 col-sm-7 col-md-5 col-lg-3 m-4 d-flex justify-content-center align-items-center">
                 <div id="overlay" class="p-2 position-absolute d-flex flex-column justify-content-center align-items-center col-10 col-sm-7 col-md-5 col-lg-3">
                     <span class="text-white fs-5">Lavabo</span>
                 </div>
-                <img class="col-12" src="../assets/projetos-destaques/destaque-3.webp" alt="image"> 
+                <img class="col-12" src="../assets/apartamento-terra/suite/capa.webp" alt="image"> 
             </div>  
            
         </div> 
