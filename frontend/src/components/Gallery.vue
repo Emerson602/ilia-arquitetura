@@ -7,7 +7,6 @@
     <div id="gallery-container" class="mt-5 d-flex flex-row justify-content-center align-items-center flex-wrap">       
       
       <div id="project" class="col-11 col-lg-4 m-0 mx-lg-2 d-flex flex-column justify-content-center align-items-center" v-for="(project, index) in visibleProjects" :key="index">
-     
         <img class="col-12" :src="project.thumbnail" alt="Project Image" @click="openModal(project)">   
         <p class="fs-5">{{ project.description }}</p>       
       </div>      
@@ -144,7 +143,7 @@ export default {
           ],
         },
         {
-          name: 'Apartamento Terra - Cozinha',
+          name: 'Apto Terra - Cozinha',
           description: '',
           thumbnail: require('@/assets/apartamento-terra/cozinha/capa.webp'),
           imagesDay: [
@@ -163,7 +162,7 @@ export default {
           ],
         },
         {
-          name: 'Apartamento Terra - Estar | Jantar',
+          name: 'Apto Terra - Estar | Jantar',
           description: '',
           thumbnail: require('@/assets/apartamento-terra/sala/capa.webp'),
           imagesDay: [
@@ -184,7 +183,7 @@ export default {
           ],
         },
         {
-          name: 'Apartamento Terra - Suite',
+          name: 'Apto Terra - Suíte',
           description: '',
           thumbnail: require('@/assets/apartamento-terra/suite/capa.webp'),
           imagesDay: [
@@ -194,6 +193,23 @@ export default {
           imagesNight: [
             require('@/assets/apartamento-terra/suite/1.webp'),
             require('@/assets/apartamento-terra/suite/2.webp'),
+          ],
+        },
+        {
+          name: 'Banheiro Sol',
+          description: '',
+          thumbnail: require('@/assets/banheiro-sol/capa.webp'),
+          imagesDay: [
+            require('@/assets/banheiro-sol/1.webp'),
+            require('@/assets/banheiro-sol/2.webp'),
+            require('@/assets/banheiro-sol/3.webp'),
+            require('@/assets/banheiro-sol/4.webp'),
+          ],
+          imagesNight: [
+            require('@/assets/banheiro-sol/1.webp'),
+            require('@/assets/banheiro-sol/2.webp'),
+            require('@/assets/banheiro-sol/3.webp'),
+            require('@/assets/banheiro-sol/4.webp'),
           ],
         },
 

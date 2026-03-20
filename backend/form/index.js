@@ -34,8 +34,13 @@ app.post('/form', async (req, res) => {
       email,
       message,
 
+      howDidYouFindOutAboutUs,
       projectType,
       otherProjectType,
+      aboutTheProperty,
+      whatDoYouIntendToDo,
+      demolishOrBuildWalls,
+      planOfTheProperty,
       investmentRange,
       desiredAreas,
       propertyType,
@@ -46,7 +51,8 @@ app.post('/form', async (req, res) => {
       deadline,
       legalApproval,
       constructionMonitoring,
-      hasAnExecutionTeam
+      hasAnExecutionTeam,
+      wantToChange
     } = req.body;
 
     const mailText = `
@@ -56,13 +62,18 @@ Whatsapp: ${phone}
 E-mail: ${email}
 
 📐 Detalhes do projeto
+Como nos conheceu: ${howDidYouFindOutAboutUs}
 Tipo de projeto: ${projectType}
 Outro tipo de projeto: ${otherProjectType || '—'}
+Sobre o imóvel: ${aboutTheProperty}
+O que você pretende fazer no espaço: ${whatDoYouIntendToDo}
+Pretende trocar: ${wantToChange}
+Será necessário demolir ou construir paredes: ${demolishOrBuildWalls}
+Possui planta do imóvel: ${planOfTheProperty}
 Faixa de investimento: ${investmentRange}
 Ambientes: ${desiredAreas}
 Tipo de imóvel: ${propertyType}
 Medidas gerais do ambiente: ${dimensions}
-Possui referências: ${references}
 Estilo de arquitetura: ${architectureStyle}
 Deseja projeto de iluminação/luminotécnica?: ${lightingProject}
 Qual o prazo desejado para a conclusão do projeto?: ${deadline}

@@ -159,11 +159,13 @@ export default {
         this.closeModal();
       }
     },
-
+ 
   },
 
   mounted() {
     window.addEventListener('keydown', this.handleKeydown); 
+    
+    
   },
   beforeUnmount() {
     window.removeEventListener('keydown', this.handleKeydown);
@@ -222,6 +224,7 @@ export default {
 
 #thumbnails {
   overflow-x: auto; 
+  
 }
 
 #thumbnails::-webkit-scrollbar {

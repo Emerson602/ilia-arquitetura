@@ -6,6 +6,7 @@
 </template>
 
 <script>
+
 import Header from '@/components/Header.vue'; 
 import Preload from '@/components/Preload.vue';
 import WhatsappButton from '@/components/whatsappButton.vue';
@@ -45,22 +46,54 @@ export default {
         document.body.style.overflow = '';
       }
     },
+
     checkDevice() {
       const isMobile = window.innerWidth <= 768;
 
       if (isMobile) {
         this.whatsapp = 'https://api.whatsapp.com/send?phone=5582988777687';
       }
+    },
+
+    blockClickRight(e) {
+      e.preventDefault();
+    },
+
+    blockShortcuts(e) {
+
+      if (e.key === 'F12') {
+        e.preventDefault();
+      }
+
+      if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+        e.preventDefault();
+      }
+
+      if (
+        e.ctrlKey &&
+        e.shiftKey &&
+        ['i', 'j', 'c'].includes(e.key.toLowerCase())
+      ) {
+        e.preventDefault();
+      }
     }
   },
+
   mounted() {
     this.checkDevice();
     window.addEventListener("resize", this.checkDevice);
+
+    document.addEventListener('contextmenu', this.blockClickRight);
+    document.addEventListener('keydown', this.blockShortcuts);
   },
 
   beforeUnmount() {
     window.removeEventListener("resize", this.checkDevice);
+
+    document.removeEventListener('contextmenu', this.blockClickRight);
+    document.removeEventListener('keydown', this.blockShortcuts);
   },
+  
 }
 </script>
 
@@ -99,6 +132,7 @@ export default {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;  
   color: #000;
+  outline: none;
  } 
 
  :root {

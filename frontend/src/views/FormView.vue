@@ -11,7 +11,7 @@
 <script>
 
 import ImageTransitionContainer from '@/components/ImageTransitionContainer.vue'; 
-import Form from '@/components/Form.vue';
+import Form from '@/components/form/Form.vue';
 import Contacts from '@/components/Contacts.vue';
 import Footer from '@/components/Footer.vue';
 

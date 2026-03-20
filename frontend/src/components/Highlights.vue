@@ -13,23 +13,23 @@
 
             <div id="container-overlay" class="position-relative col-10 col-sm-7 col-md-5 col-lg-3 m-4 d-flex justify-content-center align-items-center">
                 <div id="overlay" class="p-2 position-absolute d-flex flex-column justify-content-center align-items-center col-10 col-sm-7 col-md-5 col-lg-3">
-                    <span class="text-white fs-5">Varanda gourmet</span>
+                    <span class="text-white fs-5">{{ nameProject1 }}</span>
                 </div>
-                <img class="col-12" src="../assets/apartamento-terra/cozinha/capa.webp" alt="image">
+                <img class="col-12" :src="path1" alt="image">
             </div>
 
             <div id="container-overlay" class="position-relative col-10 col-sm-7 col-md-5 col-lg-3 m-4 d-flex justify-content-center align-items-center">
                 <div id="overlay" class="p-2 position-absolute d-flex flex-column justify-content-center align-items-center col-10 col-sm-7 col-md-5 col-lg-3">
-                    <span class="text-white fs-5">Quarto</span>
+                    <span class="text-white fs-5">{{ nameProject2 }}</span>
                 </div>
-                <img class="col-12" src="../assets/apartamento-terra/sala/capa.webp" alt="image">
+                <img class="col-12" :src="path2" alt="image">
             </div>
 
             <div id="container-overlay" class="position-relative col-10 col-sm-7 col-md-5 col-lg-3 m-4 d-flex justify-content-center align-items-center">
                 <div id="overlay" class="p-2 position-absolute d-flex flex-column justify-content-center align-items-center col-10 col-sm-7 col-md-5 col-lg-3">
-                    <span class="text-white fs-5">Lavabo</span>
+                    <span class="text-white fs-5">{{ nameProject3 }}</span>
                 </div>
-                <img class="col-12" src="../assets/apartamento-terra/suite/capa.webp" alt="image"> 
+                <img class="col-12" :src="path3" alt="image"> 
             </div>  
            
         </div> 
@@ -50,18 +50,26 @@
     
 <script>
 
+
 export default {     
 
     name: 'Highlights', 
     data() {
       return {
-       
+        path1: require(`@/assets/apartamento-terra/cozinha/capa.webp`),
+        path2: require(`@/assets/apartamento-terra/sala/capa.webp`),
+        path3: require(`@/assets/apartamento-terra/suite/capa.webp`),
+        nameProject1: 'Apto Terra - Cozinha',
+        nameProject2: 'Apto Terra - Estar | Jantar',
+        nameProject3: 'Apto Terra - Suíte',
       }   
     },
     methods: {
 
     },
-    mounted() {
+    mounted() { 
+
+
       
     }
 }
