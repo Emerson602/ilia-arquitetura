@@ -4,8 +4,9 @@
         <span class="mt-3 mt-md-5 fs-2 col-10 text-center">SOLICITAÇÃO DE ORÇAMENTO</span>
 
         <p class="mt-3 mt-md-5 fs-5 col-10">
-            Preencha o formulário com o máximo de informações possíveis.
-            Cada detalhe é essencial para que possamos compreender o seu projeto com profundidade e avaliar se conseguimos atendê-lo da melhor forma.
+            Olá! Será um prazer <strong>desenvolver o seu projeto.</strong> <br class="d-md-none"><br class="d-md-none"> Ficamos muito felizes com o seu interesse no nosso trabalho. <br class="d-md-none">
+            Para iniciar, precisamos de <strong>algumas informações</strong> para que possamos atendê-lo da melhor forma possível. <br class="d-md-none"><br class="d-md-none"> Após o envio, entraremos em contato via <strong>WhatsApp</strong> com a sua proposta.
+            <br class="d-md-none"><br class="d-md-none">O retorno será feito em até <strong>3 dias úteis.</strong> Até breve!
         </p>
 
         <form @submit.prevent="submitForm" id="form" class="d-flex flex-column mt-5 align-items-center col-12">
