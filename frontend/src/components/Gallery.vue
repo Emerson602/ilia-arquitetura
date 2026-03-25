@@ -6,9 +6,9 @@
 
     <div id="gallery-container" class="mt-5 d-flex flex-row justify-content-center align-items-center flex-wrap">       
       
-      <div id="project" class="col-11 col-lg-4 m-0 mx-lg-2 d-flex flex-column justify-content-center align-items-center" v-for="(project, index) in visibleProjects" :key="index">
-        <img class="col-12" :src="project.thumbnail" alt="Project Image" @click="openModal(project)">   
-        <p class="fs-5">{{ project.description }}</p>       
+      <div id="project" class="col-5 col-lg-3 m-1 m-lg-2 d-flex flex-column justify-content-center align-items-center" v-for="(project, index) in visibleProjects" :key="index">
+        <img class="col-12 m-0" :src="project.thumbnail" alt="Project Image" @click="openModal(project)">   
+        <p class="fs-5 m-0">{{ project.description }}</p>       
       </div>      
     </div>
 
@@ -23,7 +23,8 @@
         </svg>
     </button>
       
-      <ProjectModal         
+      <ProjectModal      
+         ref="modalRef"   
          :project="selectedProject"
          :isVisible="isModalVisible"
          @close="isModalVisible = false"
@@ -46,7 +47,7 @@ export default {
     return {
       projects: [],
       totalProjects: 0,
-      maxProjects: 4,
+      maxProjects: 6,
       showMore: true,
       selectedProject: null,
       isModalVisible: false,
@@ -66,6 +67,7 @@ export default {
         {
           name: 'Lavabo',
           description: '',
+          dayAndNight: false,
           thumbnail: require('@/assets/lavabo/capa.webp'),
           imagesDay: [
             require('@/assets/lavabo/1.webp'),
@@ -81,9 +83,10 @@ export default {
         {
           name: 'Banheiro oliva',
           description: '',
+          dayAndNight: true,
           thumbnail: require('@/assets/banheiro-oliva/capa.webp'),
           imagesDay: [
-            require('@/assets/banheiro-oliva/1.webp'), 
+            require('@/assets/banheiro-oliva/1-day.webp'), 
             require('@/assets/banheiro-oliva/2.webp')
           ],
           imagesNight: [
@@ -94,6 +97,7 @@ export default {
         {
           name: 'Quarto',
           description: '',
+          dayAndNight: true,
           thumbnail: require('@/assets/quarto/capa.webp'),
           imagesDay: [
             require('@/assets/quarto/1-day.webp'),
@@ -119,6 +123,7 @@ export default {
         {
           name: 'Varanda Gourmet',
           description: '',
+          dayAndNight: false,
           thumbnail: require('@/assets/varanda-gourmet/capa.webp'),
           imagesDay: [
             require('@/assets/varanda-gourmet/1.webp'),
@@ -134,6 +139,7 @@ export default {
         {
           name: 'Casa Brisa',
           description: '',
+          dayAndNight: false,
           thumbnail: require('@/assets/casa-brisa/capa.webp'),
           imagesDay: [
             require('@/assets/casa-brisa/1.webp'),
@@ -145,6 +151,7 @@ export default {
         {
           name: 'Apto Terra - Cozinha',
           description: '',
+          dayAndNight: false,
           thumbnail: require('@/assets/apartamento-terra/cozinha/capa.webp'),
           imagesDay: [
             require('@/assets/apartamento-terra/cozinha/1.webp'),
@@ -164,6 +171,7 @@ export default {
         {
           name: 'Apto Terra - Estar | Jantar',
           description: '',
+          dayAndNight: false,
           thumbnail: require('@/assets/apartamento-terra/sala/capa.webp'),
           imagesDay: [
             require('@/assets/apartamento-terra/sala/1.webp'),
@@ -185,6 +193,7 @@ export default {
         {
           name: 'Apto Terra - Suíte',
           description: '',
+          dayAndNight: false,
           thumbnail: require('@/assets/apartamento-terra/suite/capa.webp'),
           imagesDay: [
             require('@/assets/apartamento-terra/suite/1.webp'),
@@ -198,6 +207,7 @@ export default {
         {
           name: 'Banheiro Sol',
           description: '',
+          dayAndNight: false,
           thumbnail: require('@/assets/banheiro-sol/capa.webp'),
           imagesDay: [
             require('@/assets/banheiro-sol/1.webp'),
@@ -212,6 +222,32 @@ export default {
             require('@/assets/banheiro-sol/4.webp'),
           ],
         },
+        {
+          name: 'Bangalô Pousada Encantos da Serra',
+          description: '',
+          dayAndNight: true,
+          thumbnail: require('@/assets/bangalo/capa.webp'),
+          imagesDay: [
+            require('@/assets/bangalo/1-day.webp'),
+          ],
+          imagesNight: [
+            require('@/assets/bangalo/1-night.webp'),
+          ],
+        },
+        {
+          name: 'Casa Cabana',
+          description: '',
+          dayAndNight: false,
+          thumbnail: require('@/assets/casa-cabana/capa.webp'),
+          imagesDay: [
+            require('@/assets/casa-cabana/1.webp'),
+            require('@/assets/casa-cabana/2.webp'),
+          ],
+          imagesNight: [
+            require('@/assets/casa-cabana/1.webp'),
+            require('@/assets/casa-cabana/2.webp'),
+          ],
+        },
 
 
         
@@ -224,7 +260,7 @@ export default {
       return projects
     },
     showMoreProjects() {
-      const numberVisibleProjects = 4;
+      const numberVisibleProjects = 6;
 
       if (this.maxProjects < this.totalProjects) {
         this.maxProjects += numberVisibleProjects;
@@ -233,7 +269,7 @@ export default {
       }
     },
     handleShowMoreButton() {
-      if(this.totalProjects <= 4) {
+      if(this.totalProjects <= 6) {
        this.showMoreButtonVisibility = false;
       }
     },
@@ -241,6 +277,11 @@ export default {
       this.selectedProject = project;
       this.isModalVisible = true;       
       this.changeWidthScroll(0);    
+
+      this.$nextTick(() => {
+        this.$refs.modalRef?.toggleButtonStyle();
+      });
+
     },
     changeWidthScroll(newWidth) {      
 

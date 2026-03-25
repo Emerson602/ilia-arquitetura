@@ -90,8 +90,8 @@ export default {
   beforeUnmount() {
     window.removeEventListener("resize", this.checkDevice);
 
-    document.removeEventListener('contextmenu', this.blockClickRight);
-    document.removeEventListener('keydown', this.blockShortcuts);
+     document.removeEventListener('contextmenu', this.blockClickRight);
+     document.removeEventListener('keydown', this.blockShortcuts);
   },
   
 }
