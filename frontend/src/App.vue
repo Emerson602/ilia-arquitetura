@@ -20,6 +20,7 @@ export default {
   },
   data() {
     return {    
+      affaridev: 'https://affari.vercel.app/',
       whatsapp: 'https://api.whatsapp.com/send?phone=5582988777687', 
       instagram: 'https://www.instagram.com/studioilia.arq/',
       tiktok: 'https://www.tiktok.com/@studioiliaarq',     
@@ -29,6 +30,7 @@ export default {
   },
   provide() {
     return {
+      affariDevLink: () => this.affaridev,
       whatsappLink: () => this.whatsapp,
       instagramLink: () => this.instagram,
       tiktokLink: () => this.tiktok,

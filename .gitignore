@@ -4,6 +4,7 @@ frontend/dist
 backend/form/node_modules/
 backend/form/.env
 
+.env
 
 # local env files
 .env.local
