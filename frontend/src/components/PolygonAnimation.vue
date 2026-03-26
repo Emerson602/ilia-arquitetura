@@ -1,9 +1,7 @@
-<template> 
-    <div id="content"> 
+<template>     
       <div ref="polygonEl" class="polygon">
         <img src="../assets/logo.webp" alt="image-logo">  
       </div>      
-    </div>
 </template> 
 
 
@@ -100,25 +98,7 @@ onBeforeUnmount(() => {
 <style scoped> 
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-
-
-#content { 
-  width: 100%;
-  height: 100vh;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../assets/concept-image.webp');
-  background-repeat: no-repeat;
-  background-size: cover;  
-  z-index: 100;
-}
 
 .polygon {
 
@@ -130,7 +110,6 @@ onBeforeUnmount(() => {
   justify-content: center;
   z-index: 2;
   opacity: 0.9;
-  
 
   --clip: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: var(--clip);

@@ -1,6 +1,8 @@
 <template>
   <div id="links">
-  <AnimationLinksView />
+    <div id="box-polygon">   
+      <PolygonAnimation />
+    </div>
   <LinkThree />
   <Footer />
   </div> 
@@ -9,14 +11,14 @@
 
 <script>
 
-import AnimationLinksView from '@/components/AnimationLinksView.vue';
+import PolygonAnimation from '@/components/PolygonAnimation.vue';
 import LinkThree from '@/components/LinkThree.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'LinksView',
   components: {    
-    AnimationLinksView,
+    PolygonAnimation,
     LinkThree, 
     Footer,
  
@@ -26,6 +28,24 @@ export default {
 </script>
 
 <style scoped>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#box-polygon { 
+  width: 100%;
+  height: 100vh;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/concept-image.webp');
+  background-repeat: no-repeat;
+  background-size: cover;  
+  z-index: 100;
+}
 
 #links {
   background-color: var(--color-7);

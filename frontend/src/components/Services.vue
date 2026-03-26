@@ -1,6 +1,7 @@
 <template>
 
  <div id="services-container" class="col-12 h-auto py-5 text-start d-flex justify-content-center align-items-center flex-column">
+    
     <div class="col-10 text-center text-md-start">
         <h3>Nossos Serviços:</h3>
     </div>
@@ -51,11 +52,14 @@
         </div>
     </div> 
     <div v-if="showModal" class="modal-backdrop fade show"></div>
+    
  </div>
 
 </template>
 
 <script>
+
+
 export default {
   name: 'Services',
 

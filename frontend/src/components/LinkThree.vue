@@ -14,14 +14,14 @@
 
 <script>
 
-import AnimationLinksView from '@/components/AnimationLinksView.vue';
+import PolygonAnimation from '@/components/PolygonAnimation.vue';
 
 export default {
   name: 'LinkThree',
   inject: ['whatsappLink', 'instagramLink', 'tiktokLink', 'siteLink'], 
   
   components: {    
-    AnimationLinksView, 
+    PolygonAnimation, 
   }
 }
 
