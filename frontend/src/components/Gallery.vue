@@ -223,15 +223,17 @@ export default {
           ],
         },
         {
-          name: 'Bangalô Pousada Encantos da Serra',
+          name: 'Bangalô Marserra',
           description: '',
           dayAndNight: true,
           thumbnail: require('@/assets/bangalo/capa.webp'),
           imagesDay: [
             require('@/assets/bangalo/1-day.webp'),
+            require('@/assets/bangalo/2.webp'),
           ],
           imagesNight: [
             require('@/assets/bangalo/1-night.webp'),
+            require('@/assets/bangalo/2.webp'),
           ],
         },
         {
