@@ -35,20 +35,10 @@ export default {
   box-sizing: border-box;
 }
 
-#box-polygon { 
-  width: 100%;
-  height: 100vh;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../assets/concept-image.webp');
+#links {
+  background-image: url('../assets/apartamento-terra/cozinha/1.webp');
   background-repeat: no-repeat;
   background-size: cover;  
-  z-index: 100;
-}
-
-#links {
-  background-color: var(--color-7);
   width: 100%;
   height: auto;
   position: absolute;
@@ -56,7 +46,30 @@ export default {
   left: 0;
   display: flex;
   flex-direction: column;
+  z-index: 99;
 }
+
+@media (max-width: 980px) {
+  #links {
+    background-image: url('../assets/concept-image.webp');
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
+}
+
+#box-polygon { 
+  width: 100%;
+  height: auto;  
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  z-index: 100;
+
+}
+
+
+
 
 </style>
 

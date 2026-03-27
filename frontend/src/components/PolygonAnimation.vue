@@ -102,8 +102,8 @@ onBeforeUnmount(() => {
 
 .polygon {
 
-  width: 320px;
-  height: 320px;
+  width: 200px;
+  height: 200px;
   background-color: var(--color-1);
   display: flex;
   align-items: center;
@@ -119,13 +119,13 @@ onBeforeUnmount(() => {
 
 @media (max-width: 768px) {
   .polygon {
-    width: 60%;
-    height: 300px;
+    width: 150px;
+    height: 150px;
   }
 }
 
 .polygon img {
-  width: 150px;
+  width: 100px;
   height: auto;
 }
 
