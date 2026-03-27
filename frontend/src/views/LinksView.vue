@@ -36,7 +36,7 @@ export default {
 }
 
 #links {
-  background-image: url('../assets/apartamento-terra/cozinha/1.webp');
+  background-image: url('../assets/concept-image.webp'); 
   background-repeat: no-repeat;
   background-size: cover;  
   width: 100%;
@@ -51,7 +51,7 @@ export default {
 
 @media (max-width: 980px) {
   #links {
-    background-image: url('../assets/concept-image.webp');
+    background-image: url('../assets/apartamento-terra/cozinha/1.webp');
     background-repeat: no-repeat;
     background-size: cover;  
   }
