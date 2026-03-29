@@ -2,22 +2,22 @@
 
     <div id="container-links">
 
-        <router-link to="/projetos">
+        <router-link id="link-1" to="/projetos">
           <button class="my-3">
             Portfólio
           </button>
         </router-link> 
-        <a :href="siteLink()" target="_blank" class="my-3">
+        <a :href="siteLink()" id="link-2" target="_blank" class="my-3">
           <button>
           Visite o nosso site
          </button>
        </a>
-       <router-link to="/formulario">
+       <router-link id="link-3" to="/formulario">
           <button class="my-3">
              Solicite um orçamento
           </button>
        </router-link>   
-       <a :href="whatsappLink()" target="_blank" class="my-3">
+       <a :href="whatsappLink()" id="link-4" target="_blank" class="my-3">
           <button>
           Fale comigo
          </button>
@@ -91,6 +91,41 @@ export default {
   align-items: center;
   padding: 0px 0 100px 0;  
 } 
+
+#link-1, 
+#link-2,
+#link-3, 
+#link-4 {
+  animation: opacity 0.5s ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+#link-1 {
+  animation-delay: 0.5s;
+}
+
+#link-2 {
+  animation-delay: 1s;
+}
+
+#link-3 {
+  animation-delay: 1.5s;
+}
+
+#link-4 {
+  animation-delay: 2s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 #container-links svg {
   fill: var(--color-3);
