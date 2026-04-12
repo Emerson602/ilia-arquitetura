@@ -4,7 +4,8 @@
 
         <div class="col-12 col-lg-3 d-flex flex-column justify-content-center align-items-center align-items-lg-start px-5">
             <h3 class="fs-5 mt-3 mt-lg-0">Quero um projeto</h3>
-            <router-link to="/formulario" id="link" class="mt-3">Solicitar orçamento</router-link>
+            <!--<router-link to="/formulario" id="link" class="mt-3">Solicitar orçamento</router-link>-->
+            <a id="link" :href="whatsappLink()"  class="mt-3" target="_blank">Solicitar orçamento</a>
             <span class="mt-3">CAU nº A325216-7</span>
 
             <div class="mt-5 d-none d-lg-block">

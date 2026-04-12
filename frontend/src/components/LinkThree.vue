@@ -11,13 +11,8 @@
           <button>
           Visite o nosso site
          </button>
-       </a>
-       <router-link id="link-3" to="/formulario">
-          <button class="my-3">
-             Solicite um orçamento
-          </button>
-       </router-link>   
-       <a :href="whatsappLink()" id="link-4" target="_blank" class="my-3">
+       </a>  
+       <a :href="whatsappLink()" id="link-3" target="_blank" class="my-3">
           <button>
           Fale comigo
          </button>
@@ -94,11 +89,12 @@ export default {
 
 #link-1, 
 #link-2,
-#link-3, 
-#link-4 {
+#link-3 {
   animation: opacity 0.5s ease-in;
   animation-fill-mode: forwards;
   opacity: 0;
+  position: relative;
+  top: -50px;
 }
 
 #link-1 {
@@ -113,17 +109,15 @@ export default {
   animation-delay: 1.5s;
 }
 
-#link-4 {
-  animation-delay: 2s;
-}
-
 @keyframes opacity {
   0% {
     opacity: 0;
+    top: -50px;
   }
 
   100% {
     opacity: 1;
+    top: 0;
   }
 }
 

@@ -6,7 +6,7 @@
 
     <div id="gallery-container" class="mt-5 d-flex flex-row justify-content-center align-items-center flex-wrap">       
       
-      <div id="project" class="col-5 col-lg-3 m-1 m-lg-2 d-flex flex-column justify-content-center align-items-center" v-for="(project, index) in visibleProjects" :key="index">
+      <div id="project" class="col-5 col-lg-3 m-1 m-lg-2 d-flex flex-column justify-content-center align-items-center" :style="{ animationDelay: `${index * 0.2}s` }" v-for="(project, index) in visibleProjects" :key="index">
         <img class="col-12 m-0" :src="project.thumbnail" alt="Project Image" @click="openModal(project)">   
         <p class="fs-5 m-0">{{ project.description }}</p>       
       </div>      
@@ -250,7 +250,24 @@ export default {
             require('@/assets/casa-cabana/2.webp'),
           ],
         },
-
+        {
+          name: 'Fachada',
+          description: '',
+          dayAndNight: true,
+          thumbnail: require('@/assets/fachada/capa.webp'),
+          imagesDay: [
+            require('@/assets/fachada/1.webp'),
+            require('@/assets/fachada/2.webp'),
+            require('@/assets/fachada/3-day.webp'),
+            require('@/assets/fachada/4-day.webp'),
+          ],
+          imagesNight: [
+            require('@/assets/fachada/1.webp'),
+            require('@/assets/fachada/2.webp'),
+            require('@/assets/fachada/3-night.webp'),
+            require('@/assets/fachada/4-night.webp'),
+          ],
+        },
 
         
       ];
@@ -316,6 +333,21 @@ export default {
 
 #gallery-container {
   padding: 20px;
+} 
+
+#gallery-container div {
+  animation: animationImages 1s ease;
+  animation-fill-mode: forwards;
+  filter: grayscale(100%);
+} 
+
+@keyframes animationImages {
+  0% {
+    filter: grayscale(100%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
 }
 
 #project img {
